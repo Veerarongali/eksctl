@@ -39,5 +39,6 @@ eksctl create cluster -f /opt/eks/cluster.yaml
 
 
 kubectl apply -k "github.com/kubernetes-sigs/aws-ebs-csi-driver/deploy/kubernetes/overlays/stable/?ref=release-1.53"  #EBS Drivers
+
 kubectl kustomize \
     "github.com/kubernetes-sigs/aws-efs-csi-driver/deploy/kubernetes/overlays/stable/?ref=release-2.1" > public-ecr-driver.yaml #EFS Drivers
