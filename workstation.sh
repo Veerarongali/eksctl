@@ -54,7 +54,7 @@ kubectl kustomize \
     "github.com/kubernetes-sigs/aws-efs-csi-driver/deploy/kubernetes/overlays/stable/?ref=release-2.1" > public-ecr-driver.yaml #EFS Drivers
 
 
-#helm
+#helm installation
 $ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-4
 $ chmod 700 get_helm.sh
 $ ./get_helm.sh
